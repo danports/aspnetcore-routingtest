@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<ul>
+    @foreach (var i in Enumerable.Range(1, 10))
+    {
+        <li><a asp-action="Details" asp-route-id="@i">@i</a></li>
+    }
+</ul>
